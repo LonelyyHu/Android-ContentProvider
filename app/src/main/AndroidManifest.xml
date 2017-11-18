@@ -16,6 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name=".MyContentProvider"
+            android:authorities="com.lonelyyhu.exercise.myContentProvider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".AddUserActivity"
+            android:parentActivityName=".MainActivity" />
+
     </application>
 
 </manifest>
